@@ -6,23 +6,23 @@ def parseJSON():
     parsed_json = dict()
 
     # Load our Display names for rooms
-    raw_file = open('compsci_undergrad_tbay_raw.json')
+    raw_file = open('lakehead_formated_catalogdump.json')
     raw_file_json = json.load(raw_file)
 
-    course_list = raw_file_json.get("CourseFullModels")
-
+    page_list = raw_file_json.get("Pages")
     parsed_course_list = []
 
-    while bool(course_list):
-        parsed_course_list.append(parseCourse(course_list.pop(0)))
+    for page in page_list:
+        course_list = page.get("CourseFullModels")
+
+        while bool(course_list):
+            parsed_course_list.append(parseCourse(course_list.pop(0)))
 
     parsed_json.update(
         {
             "Courses": parsed_course_list
         }
     )
-
-    print(json.dumps(raw_file_json, indent=4))
 
     with open("parsed_response.json", "w") as parsed_file:
         parsed_file.write(json.dumps(parsed_json, indent=4))
@@ -31,7 +31,7 @@ def parseJSON():
     raw_file.close()
 
 
-# parse their data set by just taking the values we wan't. It's easier than deleting the rest. maybe we can just load
+# parse their data set by just taking the values we want. It's easier than deleting the rest. maybe we can just load
 # in specific keys with JSON though
 def parseCourse(course):
     parsed_course = dict()
@@ -42,8 +42,16 @@ def parseCourse(course):
         "CourseCode": course.get("CourseTitleDisplay"),
         "Title": course.get("Title"),
         "Description": course.get("Description"),
+        "CourseRequisites": course.get("CourseRequisites")
     })
     return parsed_course
+
+
+# Just a preliminary POC to
+#
+#
+#
+##
 
 
 if __name__ == '__main__':
