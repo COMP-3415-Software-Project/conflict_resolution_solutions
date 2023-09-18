@@ -1,0 +1,214 @@
+{
+    "Courses": [
+        {
+            "Id": "14691",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-1110",
+            "Title": "Engineering Drawing",
+            "Description": "Basic engineering drawing techniques, office standards and practices, fits and functions of components and assemblies. Dimensioning. Use of perspective and practice in sketching."
+        },
+        {
+            "Id": "15009",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-1110L",
+            "Title": "Lab for Engi 1110",
+            "Description": ""
+        },
+        {
+            "Id": "14992",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-2039L",
+            "Title": "Lab for Engi 2039",
+            "Description": ""
+        },
+        {
+            "Id": "14749",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-2990",
+            "Title": "Work Term I",
+            "Description": "An optional work term. During each four-month industrial work term the student does productive work suitable to his/her level of experience and for which he/she is paid. The student is required to participate in the pre- and post-work term preparation sessions and activities as designated by the Faculty of Engineering and Co-operative Education Centre. Once placed, the student is responsible for meeting the academic requirements of the work term including, for example but not necessarily limited to, a job description, a training plan, a performance appraisal, and a work term report. Satisfactory completion of the preceding work term is required to continue into the succeeding work term.\r\n\r\nMay only be taken by Lakehead University Engineering Technology graduates admitted to the Bachelor of Engineering Co-op/Internship Option."
+        },
+        {
+            "Id": "14714",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3014",
+            "Title": "Engineering Chemistry",
+            "Description": "Basic principles and relationships of Chemistry as applied to Engineering. This course has been designed to provide entrants to the BEng program with an improved background in Chemistry and it is taken by all students except graduate Chemical Engineering Technologists."
+        },
+        {
+            "Id": "15880",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3014L",
+            "Title": "Lab for Engi 3014",
+            "Description": ""
+        },
+        {
+            "Id": "14751",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3015",
+            "Title": "Engr Thermodynamics & Heat Tra",
+            "Description": "Fundamental laws of thermodynamics and their application to engineering. This course is required by those entrants to the BEng program whose previous background does not include this subject or who do not have an adequate standing in thermodynamics."
+        },
+        {
+            "Id": "14752",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3016",
+            "Title": "Engineering Mechanics",
+            "Description": "Applications of the principles of statics, kinematics, dynamics and strength of materials to engineering problems. This course is required by those entrants to the BEng program whose previous background does not include this subject and for entrants who are judged to require a review of this subject material."
+        },
+        {
+            "Id": "14968",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3017",
+            "Title": "Electronics",
+            "Description": "Electronics and its applications to instrumentation and controls. This course has been designed for students entering the BEng program in the Chemical and Mechanical Engineering disciplines."
+        },
+        {
+            "Id": "14969",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3021",
+            "Title": "Engineering Analysis A",
+            "Description": "Review course on the application of algebra, series, and calculus to the analysis of engineering problems."
+        },
+        {
+            "Id": "14970",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3022",
+            "Title": "Engineering Analysis B",
+            "Description": "Application of advanced analysis techniques to engineering problems, including the use of differential equations, Laplace transforms and matrix algebra."
+        },
+        {
+            "Id": "14943",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3336",
+            "Title": "Eng Econ & Project Mgmt",
+            "Description": "This course is intended as an introduction to the fundamentals and concepts of economic, financial techniques and project management. The main topics include cash flow analysis, economic analysis, economic decision-making, depreciation, taxes, inflation, cash flow development, organizing for projects, project processes and management of various aspects of a project (e.g., time, cost, risk and communications)."
+        },
+        {
+            "Id": "14924",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3453",
+            "Title": "Heat Transfer Design",
+            "Description": "Principles of conduction, convection and thermal radiation; steady-state and transient heat conduction in one, two and three dimensional systems; fins and fin efficiency; principles of free, forced and mixed convections; heat exchangers; selected problems in combined heat transfer."
+        },
+        {
+            "Id": "14925",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3453L",
+            "Title": "Lab for Engi 3453",
+            "Description": ""
+        },
+        {
+            "Id": "14972",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-3991",
+            "Title": "Work Term II",
+            "Description": "During each four-month industrial work term the student does productive work suitable to his/her level of experience and for which he/she is paid. The student is required to participate in the pre- and post-work term preparation sessions and activities as designated by the Faculty of Engineering and Co-operative Education Centre. Once placed, the student is responsible for meeting the academic requirements of the work term including, for example but not necessarily limited to, a job description, a training plan, a performance appraisal, and a work term report. Satisfactory completion of the preceding work term is required to continue into the succeeding work term."
+        },
+        {
+            "Id": "14682",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-4539",
+            "Title": "Professional Practice and Law",
+            "Description": "Professional Engineers Act: Regulations, Code of Ethics, registration and licensing. Professional Practice: responsibility to public, case studies covering engineering practice. Law and liability: Tort liability and contract law, legal and ethical aspects of engineering practice; Intellectual property. Sustainable Development: Innovation, economic sustainability, and social responsibility in engineering practices and processes."
+        },
+        {
+            "Id": "14679",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-4991",
+            "Title": "Work Term III",
+            "Description": "For course description see Engineering 3991."
+        },
+        {
+            "Id": "14678",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-4992",
+            "Title": "Work Term IV",
+            "Description": "For course description see Engineering 3991."
+        },
+        {
+            "Id": "14677",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-4993",
+            "Title": "Work Term V",
+            "Description": "For course description see Engineering 3991."
+        },
+        {
+            "Id": "17650",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-5012",
+            "Title": "MSc Seminar",
+            "Description": "The seminar comprises a presentation of the objectives and methodology of the proposed research, and includes an ordered and critical exposition of the literature related to the thesis topic.\r\n\r\nRestricted to MSc (Thesis) students."
+        },
+        {
+            "Id": "17651",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-5013",
+            "Title": "Research Method & Communicatio",
+            "Description": "Methods for research design, collection and analysis of data, literature search and critical assessment, concise use of technical language, organization and structure of academic publications and technical reports. Students will submit a written report and deliver an oral presentation of a research review."
+        },
+        {
+            "Id": "18903",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-5673",
+            "Title": "Special Topics in Engineering",
+            "Description": "Topics will vary, depending on the research interests of the instructor."
+        },
+        {
+            "Id": "17386",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-5739",
+            "Title": "Reading Course",
+            "Description": ""
+        },
+        {
+            "Id": "17387",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-5804",
+            "Title": "Master's Project",
+            "Description": "Independent investigation of a research-based or a practice-oriented problem. Students are expected to complete the necessary literature review, prepare a written report and present and defend their project.\r\n\r\nMay only be taken by students in the course-based MSc Engineering program."
+        },
+        {
+            "Id": "16707",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-6701",
+            "Title": "PhD Comprehensive Examination",
+            "Description": "The comprehensive examination will assess the student's general preparedness for the PhD degree and specific areas in his or her chosen area of study and research. The exam will also assess the student's ability to integrate material from divergent areas, to reconcile theoretical, methodological and empirical issues, and to think critically and creatively.\r\n\r\nMay only be taken by PhD students in Engineering. Must be taken no later than the fourth term of the PhD program."
+        },
+        {
+            "Id": "16706",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-6710",
+            "Title": "PhD Seminar",
+            "Description": "Students will gain experience in organizing and presenting the results of their scientific research to an audience of fellow scholars, and will become familiar with other scientific research in Engineering by attending the seminars of other students.\r\n\r\nMay only be taken by PhD students in Engineering. Must be taken no later than the seventh term of the PhD program."
+        },
+        {
+            "Id": "12495",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-6901",
+            "Title": "PhD Dissertation",
+            "Description": ""
+        },
+        {
+            "Id": "17681",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-9701",
+            "Title": "Continuing Course Registration",
+            "Description": ""
+        },
+        {
+            "Id": "17521",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-9804",
+            "Title": "Master's Project Placeholder",
+            "Description": ""
+        },
+        {
+            "Id": "17523",
+            "SubjectCode": "ENGI",
+            "CourseCode": "ENGI-9835",
+            "Title": "Master's Paper Placeholder",
+            "Description": ""
+        }
+    ]
+}
