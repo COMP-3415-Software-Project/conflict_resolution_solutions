@@ -42,17 +42,14 @@ def parseCourse(course):
         "CourseCode": course.get("CourseTitleDisplay"),
         "Title": course.get("Title"),
         "Description": course.get("Description"),
-        "CourseRequisites": course.get("CourseRequisites")
+        "CourseRequisites": course.get("CourseRequisites"),
+        "Requisites": course.get("Requisites")
     })
     return parsed_course
 
 
-# Just a preliminary POC to
-#
-#
-#
-##
-
 
 if __name__ == '__main__':
     parseJSON()
+
+hell no, same reason I dont use Arch, I dont want to have to build my ide from scratch
