@@ -28,24 +28,22 @@ def parseCourseListJSON():
         }
     )
 
-    with open("parsed_response.json", "w") as parsed_file:
+    with open("parsed_course_list.json", "w") as parsed_file:
         parsed_file.write(json.dumps(parsed_json, indent=4))
 
     parsed_file.close()
     raw_file.close()
 
 
+# # This just takes the course codes and will ignore the program requirements that dont require specific courses (
+# such as 2.5 FCE electives or 0.5 FCE in BIO)
 def parseProgramRequirementsJSON(programFilePath):
-    # Dictionary that will hold our parsed json datat
     parsed_json = dict()
 
-    # Load our Display names for rooms
     raw_file = open(programFilePath)
     raw_file_json = json.load(raw_file)
 
     program = raw_file_json.get("Program")
-    parsed_requirement_list = []
-
     parsed_requirement_list = [c["Id"]
                                for R in program.get("Requirements")
                                for S in R.get("Subrequirements")
@@ -56,16 +54,16 @@ def parseProgramRequirementsJSON(programFilePath):
 
     parsed_json.update(
         {
-            "Code": raw_file_json.get("Code"),
-            "Title": raw_file_json.get("Title"),
-            "Description": raw_file_json.get("Description"),
-            "Minors": raw_file_json.get("Minors"),
-            "Specializations": raw_file_json.get("Specializations"),
+            "Code": program.get("Code"),
+            "Title": program.get("Title"),
+            "Description": program.get("Description"),
+            "Minors": program.get("Minors"),
+            "Specializations": program.get("Specializations"),
             "Requirements": parsed_requirement_list
         }
     )
 
-    with open("parsed_response.json", "w") as parsed_file:
+    with open("parsed_program_list.json", "w") as parsed_file:
         parsed_file.write(json.dumps(parsed_json, indent=4))
 
     parsed_file.close()
@@ -91,4 +89,4 @@ def parseCourse(course):
 
 if __name__ == '__main__':
     parseProgramRequirementsJSON("bio3year.json")
-    # parseCourseListJSON()
+    parseCourseListJSON()
