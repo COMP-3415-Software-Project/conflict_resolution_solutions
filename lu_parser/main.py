@@ -1,7 +1,11 @@
+import asyncio
 import json
 
+import aiohttp as aiohttp
+from aiohttp import FormData
 
-def parseJSON():
+
+def parseCourseListJSON():
     # Dictionary that will hold our parsed json datat
     parsed_json = dict()
 
@@ -31,6 +35,45 @@ def parseJSON():
     raw_file.close()
 
 
+def parseProgramRequirementsJSON(programFilePath):
+    # Dictionary that will hold our parsed json datat
+    parsed_json = dict()
+
+    # Load our Display names for rooms
+    raw_file = open(programFilePath)
+    raw_file_json = json.load(raw_file)
+
+    program = raw_file_json.get("Program")
+    parsed_requirement_list = []
+
+    for R in program.get("Requirements"):
+        for S in R.get("Subrequirements"):
+            for G in S.get("Groups"):
+                if len(G.get("Courses")) != 0:
+                    for c in G.get("Courses"):
+                        parsed_requirement_list.append(c.get("Id"))
+                elif len(G.get("FromCourses")) != 0:
+                    for c in G.get("FromCourses"):
+                        parsed_requirement_list.append(c.get("Id"))
+
+    parsed_json.update(
+        {
+            "Code": raw_file_json.get("Code"),
+            "Title": raw_file_json.get("Title"),
+            "Description": raw_file_json.get("Description"),
+            "Minors": raw_file_json.get("Minors"),
+            "Specializations": raw_file_json.get("Specializations"),
+            "Requirements": parsed_requirement_list
+        }
+    )
+
+    with open("parsed_response.json", "w") as parsed_file:
+        parsed_file.write(json.dumps(parsed_json, indent=4))
+
+    parsed_file.close()
+    raw_file.close()
+
+
 # parse their data set by just taking the values we want. It's easier than deleting the rest. maybe we can just load
 # in specific keys with JSON though
 def parseCourse(course):
@@ -48,8 +91,6 @@ def parseCourse(course):
     return parsed_course
 
 
-
 if __name__ == '__main__':
-    parseJSON()
-
-hell no, same reason I dont use Arch, I dont want to have to build my ide from scratch
+    parseProgramRequirementsJSON("bio3year.json")
+    # parseCourseListJSON()
