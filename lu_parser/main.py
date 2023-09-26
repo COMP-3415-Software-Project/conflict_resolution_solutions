@@ -46,15 +46,13 @@ def parseProgramRequirementsJSON(programFilePath):
     program = raw_file_json.get("Program")
     parsed_requirement_list = []
 
-    for R in program.get("Requirements"):
-        for S in R.get("Subrequirements"):
-            for G in S.get("Groups"):
-                if len(G.get("Courses")) != 0:
-                    for c in G.get("Courses"):
-                        parsed_requirement_list.append(c.get("Id"))
-                elif len(G.get("FromCourses")) != 0:
-                    for c in G.get("FromCourses"):
-                        parsed_requirement_list.append(c.get("Id"))
+    parsed_requirement_list = [c["Id"]
+                               for R in program.get("Requirements")
+                               for S in R.get("Subrequirements")
+                               for G in S.get("Groups")
+                               for c in (G.get("Courses")
+                                         if len(G.get("Courses")) != 0 else G.get("FromCourses"))
+                               ]
 
     parsed_json.update(
         {
