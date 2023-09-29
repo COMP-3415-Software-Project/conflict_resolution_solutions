@@ -34,6 +34,21 @@ def parseCourseListJSON():
     parsed_file.close()
     raw_file.close()
 
+def parseCourse(course):
+    parsed_course = dict()
+
+    parsed_course.update({
+        "Id": course.get("Id"),
+        "SubjectCode": course.get("SubjectCode"),
+        "CourseCode": course.get("CourseTitleDisplay"),
+        "Title": course.get("Title"),
+        "Description": course.get("Description"),
+        "CourseRequisites": course.get("CourseRequisites"),
+        "Requisites": course.get("Requisites"),
+        "MatchingSectionIds": course.get("MatchingSectionIds")
+    })
+    
+    return parsed_course
 
 # # This just takes the course codes and will ignore the program requirements that dont require specific courses (
 # such as 2.5 FCE electives or 0.5 FCE in BIO)
@@ -95,4 +110,4 @@ def parseProgramRequirementsJSON(programFilePath):
 
 
 if __name__ == '__main__':
-    parseProgramRequirementsJSON("bio3year.json")
+    parseCourseListJSON()
