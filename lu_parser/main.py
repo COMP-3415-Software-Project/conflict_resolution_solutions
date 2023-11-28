@@ -47,7 +47,7 @@ def parseCourse(course):
         "Requisites": course.get("Requisites"),
         "MatchingSectionIds": course.get("MatchingSectionIds")
     })
-    
+
     return parsed_course
 
 # # This just takes the course codes and will ignore the program requirements that dont require specific courses (
